@@ -1,0 +1,494 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Text:wght@500&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Text:wght@500&family=Satisfy&display=swap');
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 10px;
+    font-family: 'SF Pro Display',sans-serif;
+}
+a{
+    display: block;
+    text-decoration: none;
+}
+
+/* ----------------------------NAVBAR-------------------------- */
+
+.container{
+    max-width: 98rem;
+    margin: 0 auto;
+    padding: 0 2.2rem;
+}
+header{
+    position: fixed;
+    top: 0%;
+    z-index: 1400;
+    width: 100%;
+    height: 4.4rem;
+    background-color: rgba(0,0,0,0.8);
+    backdrop-filter: blur(2rem);
+}
+.nav-list{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 -1rem;
+
+}
+.nav-list-mobile{
+    display: none;
+}
+.nav-link{
+    font-size: 1.4rem;
+    color: #fff;
+    padding: 0 1rem;
+    opacity: 0.7;
+    transition: opacity 0.5s;
+}
+.nav-link:hover{
+    opacity: 1;
+}
+.nav-link-apple{
+    width: 1.6rem;
+    height: 4.4rem;
+    background: url('images/apple.svg') center no-repeat;
+}
+.nav-link-search{
+    width: 1.6rem;
+    height: 4.4rem;
+    background: url('images/search.svg')  center no-repeat;
+}
+.nav-link-bag{
+    width: 1.4rem;
+    height: 4.4rem;
+    background: url('images/bag.svg') center no-repeat;
+}
+
+.info{
+    position: relative;
+    width: 100%;
+    height: 8.5rem;
+    text-align: center;
+}
+.info .head-info{
+    position: absolute;
+    top: 68%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.37rem;
+    margin-left: -1.3rem;
+    }
+/* ----------------------------HOME STYLING----------------------------- */
+
+.hero{
+    height: 90vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.iphone-12-pro{
+    height: 88vh ;
+    background: url('images/iphone-max-pro.png');
+   
+}
+.title{
+   color: #fff;
+   text-align: center;
+   padding-top: 5.5rem;
+   width: 100%;
+}
+.title-heading{
+    font-size: 5.3rem;
+    letter-spacing: -0.1rem;
+    line-height: 1.1;
+}
+.title-sub-heading{
+    font-size: 3.1rem;
+    margin-top: 0.6rem;
+    letter-spacing: 0.008rem;
+    font-weight: 300;
+}
+.title-price{
+    font-size: 1.8rem;
+    color: #888;
+    margin-top: 0.68rem;
+}
+.cta{
+    text-align: center;
+    margin-top: 1.8rem;
+    width: 100%;
+}
+.cta-link{
+    color: #008cff;
+    font-size: 2.1rem;
+    display: inline-block;
+    margin-left: 2.5rem;
+}
+/* -------------------------Iphone 12-------------------------- */
+.iphone-12{
+    background: url('images/iphone-12-new.jpg');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    border-bottom: 1.2rem solid #fff;
+}
+.title-2,.title-sub-2{
+    color: rgb(0, 0, 0);
+}
+/* -------------------------Macbook------------------------- */
+.macbook-air{
+    background: url('images/macbook-air-new.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.macbook-air .title-sub-heading{
+    font-size: 2.6rem;
+}
+/* ----------------------homepod-macbook-pro---------------- */
+.homepod-mac-pro,.mac-mini-watch,.ipad-air-tv{
+    display: flex;
+    flex-direction: row;
+}
+.homepod-mac-pro .homepod{
+    width: 50%;
+    background: url('images/mini-new.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-width: 1.4rem  0.7rem 0rem 1.4rem;
+    border-style: solid;
+    border-color: #fff;
+    position: relative;
+
+}
+.homepod-mac-pro .macbook-pro{
+    width: 50%;
+    background: url('images/MACBOOK-PRO-NEW.png ');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-width: 1.4rem 1.4rem 0rem 0.7rem ;
+    border-style: solid;
+    border-color: #fff;
+}
+.homepod .title{
+    top: 77.5%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+
+}
+.homepod .title h2{
+    font-size: 3.8rem ;
+}
+.homepod .cta{
+    position: absolute;
+    top: 87%;
+    left: 48%;
+    transform: translate(-50%, -50%);
+}
+.homepod .cta .cta-link{
+    font-size: 1.75rem;
+}
+.homepod-mac-pro .macbook-pro .title{
+    padding-top: 3rem;
+}
+.homepod-mac-pro .macbook-pro .title .title-3{
+    font-size: 3.6rem;
+}
+.homepod-mac-pro .macbook-pro .title .title-sub-3{
+    font-size: 2rem;
+    margin: 1rem;
+}
+.macbook-pro .cta-link{
+    font-size: 1.75rem;
+}
+/* -------------------------mac mini watch -------------------------- */
+.mac-mini-watch .mac-mini{
+    width: 50%;
+    background: url('images/mac-mini-new.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-width: 1.4rem  0.7rem 1.4rem 1.4rem;
+    border-style: solid;
+    border-color: #fff;
+    position: relative;
+}
+.mac-mini-watch .watch{
+    width: 50%;
+    background: url('images/watch-new.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-width: 1.4rem 1.4rem 1.4rem 0.7rem ;
+    border-style: solid;
+    border-color: #fff;
+}
+.mac-mini .title{
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+}
+.watch .title{
+    padding-top: 4.5rem;
+}
+.mac-mini .title .title-3{
+    font-size: 3.6rem;
+}
+.watch .title .title-3{
+    font-size: 2.75rem;
+    letter-spacing: 0.1rem;
+}
+.mac-mini .title .title-sub-3,
+.watch .title .title-sub-3{
+    font-size: 2rem;
+}
+.mac-mini .cta{
+    position: absolute;
+    top: 87%;
+    left: 48%;
+    transform: translate(-50%, -50%);
+    font-weight: 300;
+}
+.mac-mini .cta-link,
+.watch .cta-link{
+    font-size: 1.63rem;
+}
+/* ----------------------------IPAD_AIR_TV--------------------------- */
+
+.ipad-air-tv .ipad-air{
+    width: 50%;
+    background: url('images/ipad-air.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-width: 0 0.7rem 1.4rem 1.4rem;
+    border-style: solid;
+    border-color: #fff;
+    position: relative;
+}
+.ipad-air-tv .tv{
+    width: 50%;
+    background: url('images/tv+.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-width: 0 1.4rem 1.4rem 0.7rem ;
+    border-style: solid;
+    border-color: #fff;
+    position: relative;
+}
+.ipad-air .title .title-3{
+    font-size: 3.9rem;
+    color:#000;
+}
+.ipad-air .title .title-sub-3{
+    font-size: 2rem;
+    color: #000;
+}
+.ipad-air .cta-link{
+    font-size: 1.63rem;
+}
+.tv .title{
+    padding-top: 1.5rem;
+}
+.tv .title .title-3{
+    font-size: 4rem;
+    letter-spacing: 0.5rem;
+    font-family: 'Big Shoulders Inline Text', cursive;
+}
+.tv .title .signature{
+    font-family: 'Satisfy', cursive;
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+}
+/* -------------------FOOTER-------------------------- */
+
+.footer{
+    height: 120vh;
+    background: #f5f5f7;
+}
+.footer .theory{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #b6b6c2;
+}
+.footer .theory p{
+    font-size: 1.2rem;
+    margin: 1rem;
+    letter-spacing: 0.04rem;
+    line-height: 2rem;
+    color: #86868b;
+}
+.footer .imp-links{
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.footer .imp-links ul{
+    list-style: none;
+}
+.footer .imp-links ul li{
+    font-size: 1.2rem;
+    margin: 1.2rem;
+    letter-spacing: 0.04rem;
+    color: #76767a;
+}
+.footer .imp-links ul li strong{
+    color: rgb(39, 37, 37);
+}
+.footer .call{
+    font-size: 1.2rem;
+    letter-spacing: 0.04rem;
+    line-height: 2rem;
+    color: #86868b;
+    margin-top: 2.6rem;
+    padding-bottom: 1.2rem;
+    border-bottom: 1px solid #b6b6c2;
+}
+.container .copyright-india{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1.2rem;
+    letter-spacing: 0.04rem;
+    color: #86868b;
+    font-size: 1.2rem;
+}
+.copyright-india .last-links ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: -15rem;
+}
+.copyright-india .last-links ul li{
+    padding: 0 1rem;
+    border-right: 1px solid #b6b6c2;
+}
+.copyright-india .last-links ul li:last-child{
+    border: none;
+}
+/* --------------------Media queries---------------------------- */
+/* @media screen and (max-width:400px) and (max-width:768px){
+
+} */
+@media screen and (max-width:1024px){
+    .info{
+        height: 10rem;
+    }
+    .info .head-info{
+        top: 62%;
+    }
+    .hero{
+        height: 50vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .iphone-12{
+        background: url('images/i-12-1.png');
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .homepod-mac-pro .homepod{
+        background: url('images/mini-3.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .ipad-air-tv .ipad-air{
+        background: url('images/ipad-air-small.png');
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .ipad-air-tv .ipad-air .title{
+        position: absolute;
+        top: 75%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .ipad-air-tv .ipad-air .title .title-heading{
+        font-size: 0rem;
+    }
+    .ipad-air-tv .ipad-air .cta{
+        position: absolute;
+        top: 90%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .title{
+        padding-top: 4.5rem;
+     }
+    .title-heading{
+        font-size: 4.7rem;
+    }
+    .title-sub-heading{
+        font-size: 2.8rem;
+        margin-top: 0.4rem;
+    }
+    .title-price{
+        margin-top: 1.5rem;
+    }
+}
+@media screen and (max-width:768px){
+    .iphone-12 .title .title-2{
+        font-size: 4.5rem;
+    }
+    .iphone-12 .title .title-sub-heading{
+        font-size: 2.3rem;
+    }
+    .iphone-12 .title .title-price{
+        margin-top: 0.4rem;
+    }
+    .iphone-12 .cta{
+        margin-top: 0.5rem;
+    }
+    .mac-mini-watch .mac-mini .title{
+        top: 70%;
+    }
+    .mac-mini-watch .mac-mini .title-sub-heading{
+        margin-top: 1.5rem;
+    }
+    .mac-mini-watch .watch .title{
+        margin-top: -1rem;
+    }
+    .mac-mini-watch .watch .title-price{
+        margin-top: 0;
+    }
+    .mac-mini-watch .watch .title-sub-heading{
+        font-size: 1.75rem;
+        margin-top: 1rem;
+    }
+    .ipad-air-tv .tv .signature{
+        font-size: 1.5rem;
+    }
+    .ipad-air-tv .tv .title-heading{
+        font-size: 3.1rem;
+    }
+    .copyright-india{
+        margin-top: -2rem;
+    }
+    .copyright-india .copyright{
+        width: 25%;
+        padding-top: 1.5rem;
+    }
+    .copyright-india .last-links{
+        margin-left: 10rem;
+    }
+}
+@media screen and (max-width:415px){
+    .footer .container .imp-links{
+        display: block;
+    }
+}
